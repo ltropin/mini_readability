@@ -12,6 +12,7 @@ Extraction of useful information from the URL
 Следющим шагом идет поиск `основного` контента на странице (класс **FinderMeaningfulContent**).
 Поиск осуществляется через рекурсивных обход каждого тега.
 На каждом теге вычисляется оценка по следующей формуле:
+
 ![screenshot of sample](https://habrastorage.org/getpro/habr/post_images/3ae/ecf/a3e/3aeecfa3ea7a7504ba69e01c86b25b26.png)
 
 После к чистой оценке добавляется/вычитается определенное значение за нахождение определенного слова в указанном атрибуте.
