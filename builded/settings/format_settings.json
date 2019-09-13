@@ -1,0 +1,43 @@
+{
+    "tag_format": [
+        {
+            "tags": [
+                "h1",
+                "h2"
+            ],
+            "replacer": "*** %s\n"
+        },
+        {
+            "tags": [
+                "a->href"
+            ],
+            "replacer": "[%s]",
+            "full_url": true
+        },
+        {
+            "tags": [
+                "img->src"
+            ],
+            "replacer": "[IMG] %s [/IMG]"
+        },
+        {
+            "tags": [
+                "p"
+            ],
+            "end": "\n\n"
+        },
+        {
+            "tags": [
+                "div"
+            ],
+            "end": "\n"
+        },
+        {
+            "tags": [
+                "time"
+            ],
+            "replacer": "\u0414\u0430\u0442\u0430: %s"
+        }
+    ],
+    "word_wrap": 80
+}
