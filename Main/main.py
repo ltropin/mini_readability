@@ -26,7 +26,7 @@ try:
         main_json_settings = json.load(f)
 except:
     with open(f'{currentPath}/settings/main_settings.json', 'w') as f:
-        json.dump(MAIN_SETTINGS, f)
+        json.dump(MAIN_SETTINGS, f, indent=4)
         print(f'Файл с главными настройками сохранен по пути: /settings/main_settings.json')
     # Устанавливаем дефолтные настройки
     main_json_settings = MAIN_SETTINGS
@@ -36,7 +36,7 @@ try:
         format_json_settings = json.load(f)
 except:
     with open(f'{currentPath}/settings/format_settings.json', 'w') as f:
-        json.dump(FORMAT_SETTINGS, f)
+        json.dump(FORMAT_SETTINGS, f, indent=4)
         print(f'Файл с главными настройками сохранен по пути: /settings/format_settings.json')
     # Устанавливаем дефолтные настройки
     format_json_settings = FORMAT_SETTINGS
