@@ -18,26 +18,26 @@ currentPath = os.getcwd()
 main_json_settings = None
 format_json_settings = None
 # Создание директории
-if not os.path.exists(f'{currentPath}/settings'):
-    os.makedirs(f'{currentPath}/settings')
+if not os.path.exists(f'{currentPath}\\settings'):
+    os.makedirs(f'{currentPath}\\settings')
 # Создание/Использование настроек
 try:
-    with open(f'{currentPath}/settings/main_settings.json', 'r') as f:
+    with open(f'{currentPath}\\settings\\main_settings.json', 'r') as f:
         main_json_settings = json.load(f)
 except:
-    with open(f'{currentPath}/settings/main_settings.json', 'w') as f:
+    with open(f'{currentPath}\\settings\\main_settings.json', 'w') as f:
         json.dump(MAIN_SETTINGS, f, indent=4)
-        print(f'Файл с главными настройками сохранен по пути: /settings/main_settings.json')
+        print(f'Файл с главными настройками сохранен по пути: \\settings\\main_settings.json')
     # Устанавливаем дефолтные настройки
     main_json_settings = MAIN_SETTINGS
 
 try:
-    with open(f'{currentPath}/settings/format_settings.json', 'r') as f:
+    with open(f'{currentPath}\\settings\\format_settings.json', 'r') as f:
         format_json_settings = json.load(f)
 except:
-    with open(f'{currentPath}/settings/format_settings.json', 'w') as f:
+    with open(f'{currentPath}\\settings\\format_settings.json', 'w') as f:
         json.dump(FORMAT_SETTINGS, f, indent=4)
-        print(f'Файл с главными настройками сохранен по пути: /settings/format_settings.json')
+        print(f'Файл с главными настройками сохранен по пути: \\settings\\format_settings.json')
     # Устанавливаем дефолтные настройки
     format_json_settings = FORMAT_SETTINGS
 

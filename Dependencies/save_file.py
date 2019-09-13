@@ -34,9 +34,9 @@ class SaveContent:
         soup = BeautifulSoup(htmlResult, 'lxml')
 
         replacer = Replacer(html_soup=soup,
-                    main_settings=self.main_settings,
-                    format_settings=self.format_settings,
-                    url=self.domain)
+                            main_settings=self.main_settings,
+                            format_settings=self.format_settings,
+                            url=self.domain)
         
         # Список тегов документа
         list_tags = replacer.get_all_tags()
@@ -65,11 +65,12 @@ class SaveContent:
         if not os.path.exists(self.url_path):
             os.makedirs(self.url_path)
 
-        fullPath = self.current_dir + '/' + self.url_path + '/' + self.url_file
-        try:
-            with open(fullPath, 'w') as f:
-                print(placeholder, file=f)
-                print(f'Файл сохранен по пути: {fullPath}')
-        except:
-            print('Ошибка при сохранении файла!')
+        fullPath = self.current_dir + '\\' + self.url_path + '\\' + self.url_file
+        fullPath = fullPath.replace('/', '\\')
+        # try:
+        with open(fullPath, 'w') as f:
+            print(placeholder, file=f)
+            print(f'Файл сохранен по пути: {fullPath}')
+        # except:
+            # print('Ошибка при сохранении файла!')
     
