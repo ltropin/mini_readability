@@ -46,6 +46,7 @@ if len(sys.argv) == 2 and '=' in sys.argv[1]:
     argument = sys.argv[1].split('=')
     if 'url' in argument[0] and len(argument[1]) > 4:
         url = argument[1]
+# url = 'https://russian.rt.com/russia/article/668008-pensiya-rossiya-rost'
         saver = SaveContent(url, main_json_settings, format_json_settings)
         saver.save_content()
     else:

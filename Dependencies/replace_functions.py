@@ -39,8 +39,6 @@ def replacer(html_soup, formater, url=''):
                     newContent = htmlElement.text + " " + formater['replacer'].replace('%s', attributeContent)
                     # Заменяем контент вместе с тегом.
                     htmlElement.replace_with(newContent)
-                else:
-                    raise KeyError(f'Attribute not found! Key: {attributeKey}')
         else:
             for htmlElement in html_soup.find_all(tag):
                 htmlElement.replace_with(formater['replacer'].replace('%s', htmlElement.text))
