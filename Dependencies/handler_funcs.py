@@ -19,5 +19,5 @@ def get_path_by_url(url):
         newLaswWord = lastWord.split('.')[0] + '.txt'
     else:
         newLaswWord = lastWord + '.txt'
-    print(lastWord)
+    
     return path.replace(lastWord, ''), newLaswWord

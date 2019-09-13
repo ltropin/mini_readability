@@ -66,9 +66,9 @@ class SaveContent:
             os.makedirs(self.url_path)
 
         fullPath = self.current_dir + '\\' + self.url_path + '\\' + self.url_file
-        fullPath = fullPath.replace('/', '\\')
+        fullPath = fullPath.replace('/', '\\').replace('\\\\', '\\')
         try:
-            with open(fullPath, 'w') as f:
+            with open(fullPath, 'w', encoding='utf-8') as f:
                 print(placeholder, file=f)
                 print(f'Файл сохранен по пути: {fullPath}')
         except:
