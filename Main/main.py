@@ -6,6 +6,7 @@ import textwrap
 from bs4 import BeautifulSoup
 import re
 import json
+import csv
 from Dependencies.replace_tags import Replacer
 from Dependencies.finder_block import FinderMeaningfulContent
 from Dependencies.save_file import SaveContent
@@ -42,19 +43,30 @@ except:
     format_json_settings = FORMAT_SETTINGS
 
 # Работа с контентом
-if len(sys.argv) == 2 and '=' in sys.argv[1]:
-    argument = sys.argv[1].split('=')
-    if 'url' in argument[0] and len(argument[1]) > 4:
-        url = argument[1]
-# url = 'https://russian.rt.com/russia/article/668008-pensiya-rossiya-rost'
-        saver = SaveContent(url, main_json_settings, format_json_settings)
+if len(sys.argv) >= 2:
+
+    user_agents = find_argument('user-agent-txt', sys.argv)
+    proxies = find_argument('proxy-json', sys.argv)
+    file_txt = find_argument('file', sys.argv)
+    url = find_argument('url', sys.argv)
+
+    if url != None:
+        saver = SaveContent(url=url,
+                            main_settings=main_json_settings,
+                            format_setings=format_json_settings,
+                            file_user_agents=user_agents,
+                            file_proxies=proxies)
         saver.save_content()
-    elif 'file' in argument[0] and len(argument[1]) > 0:
+    elif file_txt != None:
         urls = []
-        with open(f"{currentPath}/{argument[1]}", 'r') as f:
+        with open(f"{currentPath}/{file_txt}", 'r') as f:
             urls = f.readlines()
-        for url in urls:
-            saver = SaveContent(url, main_json_settings, format_json_settings)
+        for url_txt in urls:
+            saver = SaveContent(url=url_txt,
+                                main_settings=main_json_settings,
+                                format_setings=format_json_settings,
+                                file_user_agents=user_agents,
+                                file_proxies=proxies)
             saver.save_content()
     else:
         raise OSError('Ошибка при передаче параметров!')

@@ -32,7 +32,7 @@ class FinderMeaningfulContent:
 
     def count_hyper_chars(self, tag_element):
         """ Метрика, возращающая кол-во символов заключенных в ссылке."""
-        hyper_char_count = 0
+        hyper_char_count = 1
         for tag in tag_element.find_all('a'):
             hyper_char_count += len(str(tag.text).strip())
 
@@ -57,7 +57,7 @@ class FinderMeaningfulContent:
             return -1
         elif hyperchars == 0:
             return chars / tags
-        return chars / tags * np.log2(chars / hyperchars)
+        return chars / tags * np.log2(chars / (2 ** hyperchars))
 
     def score(self, tag_element):
         """ Вычисление чистой оценки для указанного тега. """
@@ -78,9 +78,9 @@ class FinderMeaningfulContent:
 
             if type(tag_el) == Tag:
                 tag_count = self.count_all_tags(tag_el)
-                # hyper_count = self.count_hyper_chars(tag_el)
-                # char_count = self.count_chars(tag_el)
-                pure_score = self.score(tag_el)
+                hyper_count = self.count_hyper_chars(tag_el)
+                char_count = self.count_chars(tag_el)
+                pure_score = self.scorer_func(char_count, tag_count, hyper_count)
                 new_score = pure_score
                 # Получаем штраф/награду за присутствие значимых слов в тексте. (Arc90)
                 for positiveEl in self.main_settings['meaningful_words']:
@@ -98,11 +98,18 @@ class FinderMeaningfulContent:
                                     break
                 # Награда за длину текста > 10 в параграфе
                 for paragraph in tag_el.find_all('p'):
-                    if len(paragraph.text) > self.main_settings['paragraph']['min_len']:
+                    if len(paragraph.text) >= self.main_settings['paragraph']['min_len']:
                         new_score += self.main_settings['paragraph']['award']
-
                 if new_score > MAX_VAL and tag_count > 10:
                     MAX_VAL = new_score
                     MAX_EL = tag_el
+                    # print(f'Tag name: {tag_el.name}')
+                    # print(f'Char count: {char_count}')
+                    # print(f'Tag count: {tag_count}')
+                    # print(f'Hyper count: {hyper_count}')
+                    # print(f'Pure score: {pure_score}')
+                    # print(f'Final score: {new_score}')
+                    # print(f'Tag(150): {str(MAX_EL)[:150]}')
+                    # print(f'Text(150): {str(MAX_EL.text)}')
 
         return self.MANY_NL.sub('\n\n', str(MAX_EL.text))

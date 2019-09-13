@@ -6,12 +6,12 @@ MAIN_SETTINGS = {
     # Награды/Штрафы за теги
     'paragraph': {
         'min_len': 10,
-        'award': 10
+        'award': 750
     },
     'meaningful_words': [
         {
             'tag': 'class',
-            'words': ['post', 'entry', 'content', 'text', 'body', 'news'],
+            'words': ['post', 'entry', 'content', 'text', 'body', 'news', 'article'],
             'term': 100
         },
         {
