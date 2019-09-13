@@ -80,3 +80,8 @@ https://lenta.ru/articles/2019/09/11/eralash/
 
 С помощью поиска в ширину подсчитывать оценку тега на определенном уровне, возможно улучшит результаты обнаружения
 нужного блока с контентом.
+
+## Cсылки
+<https://github.com/words/flesch-kincaid>
+<https://habr.com/ru/post/220983/>
+<https://tuhrig.de/extracting-meaningful-content-from-raw-html/>
