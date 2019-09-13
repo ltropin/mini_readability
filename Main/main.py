@@ -49,6 +49,13 @@ if len(sys.argv) == 2 and '=' in sys.argv[1]:
 # url = 'https://russian.rt.com/russia/article/668008-pensiya-rossiya-rost'
         saver = SaveContent(url, main_json_settings, format_json_settings)
         saver.save_content()
+    elif 'file' in argument[0] and len(argument[1]) > 0:
+        urls = []
+        with open(f"{currentPath}/{argument[1]}", 'r') as f:
+            urls = f.readlines()
+        for url in urls:
+            saver = SaveContent(url, main_json_settings, format_json_settings)
+            saver.save_content()
     else:
         raise OSError('Ошибка при передаче параметров!')
 else:
