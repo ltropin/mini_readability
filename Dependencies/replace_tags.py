@@ -1,6 +1,6 @@
 import sys, os
 sys.path.insert(0, '')
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup, Tag, Comment
 from Dependencies.replace_functions import *
 # from Main.mainSettings import MAIN_SETTINGS
 # from settings import FORMAT_SETTINGS
@@ -84,13 +84,20 @@ class Replacer:
 
 
     def remove_empty_strings(self):
-        """ Удаляет теги с пустым текстом и возращает отчищенный документ"""
+        """
+        Удаляет теги с пустым текстом и возращает отчищенный документ.
+        Так же удаляет комментарии
+        """
         for tag in self.html_soup.find_all(True):
-            if type(tag) == Tag and len(str(tag.text)) == 0:
+            if type(tag) == Tag and len(str(tag.text.strip())) == 0:
+                tag.extract()
+            if type(tag) == Comment:
                 tag.extract()
         
         return self.html_soup
 
+    def remove_min_size(self):
+        pass
 
     def formate_html(self):
         """ Применяет последовательное форматирование для элементов."""

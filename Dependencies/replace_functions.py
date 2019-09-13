@@ -1,5 +1,5 @@
 import re
-
+from bs4 import Tag, BeautifulSoup, NavigableString
 def replacer(html_soup, formater, url=''):
     """
     Функция `Замена` для определенного тега.
@@ -36,9 +36,12 @@ def replacer(html_soup, formater, url=''):
                         attributeContent = url + slash + path
                     else:
                         attributeContent = path
-                    newContent = htmlElement.text + " " + formater['replacer'].replace('%s', attributeContent)
+                    urlFormat = formater['replacer'].replace('%s', attributeContent)
+                    newContent = htmlElement.text + " " + urlFormat
                     # Заменяем контент вместе с тегом.
-                    htmlElement.replace_with(newContent)
+                    # if type(htmlElement.string) == Tag and htmlElement.string != None:
+                    #     htmlElement.string.inser_after(f" {urlFormat}")
+                    htmlElement.replaceWith(newContent)
         else:
             for htmlElement in html_soup.find_all(tag):
                 htmlElement.replace_with(formater['replacer'].replace('%s', htmlElement.text))

@@ -57,7 +57,7 @@ class FinderMeaningfulContent:
             return -1
         elif hyperchars == 0:
             return chars / tags
-        return chars / tags * np.log2(chars / (2 ** hyperchars))
+        return (chars / tags) * np.log2(chars / hyperchars)
 
     def score(self, tag_element):
         """ Вычисление чистой оценки для указанного тега. """
@@ -110,6 +110,6 @@ class FinderMeaningfulContent:
                     # print(f'Pure score: {pure_score}')
                     # print(f'Final score: {new_score}')
                     # print(f'Tag(150): {str(MAX_EL)[:150]}')
-                    # print(f'Text(150): {str(MAX_EL.text)}')
+                    # print(f'Text(150): {str(MAX_EL.text)[:150]}')
 
         return self.MANY_NL.sub('\n\n', str(MAX_EL.text))

@@ -6,28 +6,31 @@ MAIN_SETTINGS = {
     # Награды/Штрафы за теги
     'paragraph': {
         'min_len': 10,
-        'award': 750
+        'award': 10
     },
+    # 'minimal': [
+    #     {'tags': ['td', 'tr', 'div',]}
+    # ],
     'meaningful_words': [
         {
             'tag': 'class',
             'words': ['post', 'entry', 'content', 'text', 'body', 'news', 'article'],
-            'term': 100
+            'term': 25
         },
         {
             'tag': 'id',
             'words': ['post', 'entry', 'content', 'text', 'body', 'news'],
-            'term': 75
+            'term': 25
         },
         {
             'tag': 'class',
             'words': ['comment', 'foot', 'footer', 'navbar', 'header', 'Ad'],
-            'term': -1000
+            'term': -25
         },
         {
             'tag': 'id',
             'words': ['comment', 'foot', 'footer', 'navbar', 'header', 'Ad'],
-            'term': -1000
+            'term': -25
         },
     ]
 }
