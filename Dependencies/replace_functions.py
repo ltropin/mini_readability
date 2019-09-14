@@ -41,7 +41,7 @@ def replacer(html_soup, formater, url=''):
                     newContent = htmlElement.text + " " + urlFormat
                     # Заменяем контент вместе с тегом.
                     # if type(htmlElement.string) == Tag and htmlElement.string != None:
-                    #     htmlElement.string.inser_after(f" {urlFormat}")
+                        # htmlElement.string.inser_after(f" {urlFormat}")
                     htmlElement.replaceWith(newContent)
         else:
             for htmlElement in html_soup.find_all(tag):

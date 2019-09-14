@@ -17,7 +17,8 @@
                 "p"
             ],
             "min_len": 10,
-            "award": 10
+            "award": 150,
+            "once": true
         },
         {
             "tags": [
@@ -25,7 +26,16 @@
                 "h2"
             ],
             "min_len": 10,
-            "award": 250
+            "award": 150,
+            "once": true
+        },
+        {
+            "tags": [
+                "time"
+            ],
+            "min_len": 1,
+            "award": 150,
+            "once": true
         }
     ],
     "minimal_remove": [
@@ -36,11 +46,6 @@
         },
         {
             "tag": "tr",
-            "max_len": 10,
-            "max_childrens": 2
-        },
-        {
-            "tag": "div",
             "max_len": 10,
             "max_childrens": 2
         },

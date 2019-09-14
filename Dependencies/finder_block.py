@@ -98,10 +98,17 @@ class FinderMeaningfulContent:
                                     break
                 # Награда за длину текста > 10 в параграфе
                 for award_tag in self.main_settings['good_tags']:
+                    # Заглушка
+                    tempDummy = False
                     for current_tag in award_tag['tags']:
-                      for tag_html in tag_el.find_all(current_tag):
-                        if len(tag_html.text) >= award_tag['min_len']:
-                            new_score += award_tag['award']  
+                        for tag_html in tag_el.find_all(current_tag):
+                            if len(tag_html.text) >= award_tag['min_len']:
+                                new_score += award_tag['award']
+                                tempDummy = True
+                                if award_tag['once'] and tempDummy:
+                                    break
+                        if award_tag['once'] and tempDummy:
+                            break
                 # for paragraph in tag_el.find_all('p'):
                 #     if len(paragraph.text) >= self.main_settings['paragraph']['min_len']:
                 #         new_score += self.main_settings['paragraph']['award']

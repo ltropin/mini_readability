@@ -137,6 +137,7 @@ class SaveContent:
                 with open(fullPath_saved, 'w', encoding='utf-8') as f:
                     print(soup.prettify(), file=f)
                     print(f'HTML сохранена по пути: {fullPath_saved}')
+                    print()
         except:
             print('Ошибка при сохранении файла!')
     

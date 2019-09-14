@@ -6,17 +6,20 @@ MAIN_SETTINGS = {
         {
             'tags': ['p'],
             'min_len': 10,
-            'award': 150
+            'award': 150,
+            'once': True
         },
         {
             'tags': ['h1', 'h2'],
             'min_len': 10,
-            'award': 250
+            'award': 150,
+            'once': True
         },
         {
             'tags': ['time'],
             'min_len': 1,
-            'award': 150
+            'award': 150,
+            'once': True
         }
     ],
     # Удаление `не значимых` тегов
