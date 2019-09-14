@@ -6,12 +6,17 @@ MAIN_SETTINGS = {
         {
             'tags': ['p'],
             'min_len': 10,
-            'award': 10
+            'award': 150
         },
         {
             'tags': ['h1', 'h2'],
             'min_len': 10,
             'award': 250
+        },
+        {
+            'tags': ['time'],
+            'min_len': 1,
+            'award': 150
         }
     ],
     # Удаление `не значимых` тегов
@@ -23,11 +28,6 @@ MAIN_SETTINGS = {
         },
         {
             'tag': 'tr',
-            'max_len': 10,
-            'max_childrens': 2
-        },
-        {
-            'tag': 'div',
             'max_len': 10,
             'max_childrens': 2
         },

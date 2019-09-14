@@ -32,7 +32,7 @@ class FinderMeaningfulContent:
 
     def count_hyper_chars(self, tag_element):
         """ Метрика, возращающая кол-во символов заключенных в ссылке."""
-        hyper_char_count = 1
+        hyper_char_count = 0
         for tag in tag_element.find_all('a'):
             hyper_char_count += len(str(tag.text).strip())
 
@@ -119,5 +119,7 @@ class FinderMeaningfulContent:
                     # print(f'Final score: {new_score}')
                     # print(f'Tag(150): {str(MAX_EL)[:150]}')
                     # print(f'Text(150): {str(MAX_EL.text)[:150]}')
+
+        # print(str(MAX_EL))
 
         return self.MANY_NL.sub('\n\n', str(MAX_EL.text))

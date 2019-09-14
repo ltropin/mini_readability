@@ -34,7 +34,6 @@ class SaveContent:
     def __init__(self, url, main_settings, format_setings, file_user_agents=None,
                             file_proxies=None, logging=None, save_page=None):
         self.url = url
-        self.requester = requester
         self.logging = logging
         self.save_page = save_page
         self.main_settings = main_settings

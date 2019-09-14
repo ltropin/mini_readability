@@ -47,10 +47,10 @@ class Replacer:
         5. formate_html
         """
         self.html_soup = self.html_soup.select_one('body')
+        self.html_soup = self.formate_html()
         self.html_soup = self.remove_trash_tags()
         self.html_soup = self.remove_min_size()
         self.html_soup = self.remove_empty_strings()
-        self.html_soup = self.formate_html()
 
         return self.html_soup
 

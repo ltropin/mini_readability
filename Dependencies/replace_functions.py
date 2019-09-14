@@ -23,7 +23,8 @@ def replacer(html_soup, formater, url=''):
                 # TODO: Сейчас добавление происходи в конец содержимого.
                 # Как таковую структуру нельзя настроить через настройки.
                 # Пример: <a href='#'>Link</a> -> Link [#]
-                if attributeKey in htmlElement.attrs:
+
+                if attributeKey in htmlElement.attrs.keys():
                     attributeContent = ''
                     path = htmlElement.attrs[attributeKey]
      
