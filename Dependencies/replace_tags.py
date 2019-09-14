@@ -47,6 +47,7 @@ class Replacer:
         """
         self.html_soup = self.html_soup.select_one('body')
         self.html_soup = self.remove_trash_tags()
+        self.html_soup = self.remove_min_size()
         self.html_soup = self.remove_empty_strings()
         self.html_soup = self.formate_html()
 
@@ -86,7 +87,7 @@ class Replacer:
     def remove_empty_strings(self):
         """
         Удаляет теги с пустым текстом и возращает отчищенный документ.
-        Так же удаляет комментарии
+        Так же удаляет комментарии.
         """
         for tag in self.html_soup.find_all(True):
             if type(tag) == Tag and len(str(tag.text.strip())) == 0:
@@ -97,7 +98,16 @@ class Replacer:
         return self.html_soup
 
     def remove_min_size(self):
-        pass
+        """
+        Удаляет теги, где число потомков меньше `max_childrens`
+        и максимальная длина меньше `max_len`
+        """
+        for tagElement in self.main_settings['minimal_remove']:
+            for tag_html in self.html_soup.find_all(tagElement['tag']):
+                if len(tag_html.text) < tagElement['max_len'] and len(tag_html) < tagElement['max_childrens']:
+                    tag_html.extract()
+        
+        return self.html_soup
 
     def formate_html(self):
         """ Применяет последовательное форматирование для элементов."""

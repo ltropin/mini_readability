@@ -49,24 +49,32 @@ if len(sys.argv) >= 2:
     proxies = find_argument('proxy-json', sys.argv)
     file_txt = find_argument('file', sys.argv)
     url = find_argument('url', sys.argv)
+    logging = find_argument('logging', sys.argv)
+    save_page = find_argument('save-page', sys.argv)
 
     if url != None:
         saver = SaveContent(url=url,
                             main_settings=main_json_settings,
                             format_setings=format_json_settings,
                             file_user_agents=user_agents,
-                            file_proxies=proxies)
+                            file_proxies=proxies,
+                            logging=logging,
+                            save_page=save_page)
         saver.save_content()
     elif file_txt != None:
         urls = []
         with open(f"{currentPath}/{file_txt}", 'r') as f:
             urls = f.readlines()
         for url_txt in urls:
-            saver = SaveContent(url=url_txt,
+            sess = requests.session()
+            saver = SaveContent(url=url_txt.replace('\n', ''),
                                 main_settings=main_json_settings,
                                 format_setings=format_json_settings,
                                 file_user_agents=user_agents,
-                                file_proxies=proxies)
+                                file_proxies=proxies,
+                                requester=sess,
+                                logging=logging,
+                                save_page=save_page)
             saver.save_content()
     else:
         raise OSError('Ошибка при передаче параметров!')

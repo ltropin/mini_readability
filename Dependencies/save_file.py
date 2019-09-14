@@ -27,8 +27,12 @@ class SaveContent:
     proxies: dict (optional)
         Словарь проксей
     """
-    def __init__(self, url, main_settings, format_setings, file_user_agents=None, file_proxies=None):
+    def __init__(self, url, main_settings, format_setings, file_user_agents=None,
+                            file_proxies=None, requester=None, logging=None, save_page=None):
         self.url = url
+        self.requester = requester
+        self.logging = logging
+        self.save_page = save_page
         self.main_settings = main_settings
         self.format_settings = format_setings
         self.domain = get_domain(url)
@@ -65,9 +69,22 @@ class SaveContent:
     def save_content(self):
         current_user_agent = random.choice(self.user_agents).replace('\n', '') if len(self.user_agents) > 0 else ''
         proxy = random.choice(self.proxies) if len(self.proxies) > 0 else {}
-        htmlResult = requests.get(self.url, headers={'user-agent': str(current_user_agent)},
-                                            proxies=proxy).content
+
+        htmlResult = None
+        # Логгирование
+        if self.logging == 'True' or self.logging == 'true':
+            print(f'URL: {self.url}')
+            print(f'Proxy: {list(proxy.values())[0]}')
+            print(f'User-Agent: {current_user_agent}')
+        
+        if self.requester is None:
+            htmlResult = requests.get(self.url, headers={'User-Agent': str(current_user_agent)},
+                                                proxies=proxy).content
+        else:
+            htmlResult = self.requester.get(self.url, headers={'User-Agent': str(current_user_agent)},
+                                                      proxies=proxy).content
         soup = BeautifulSoup(htmlResult, 'lxml')
+    
 
         replacer = Replacer(html_soup=soup,
                             main_settings=self.main_settings,
@@ -101,12 +118,26 @@ class SaveContent:
         # Создаем папку для файла
         if not os.path.exists(self.url_path):
             os.makedirs(self.url_path)
+        # Путь до конечного файла с новостью
         fullPath = self.current_dir + '\\' + self.url_path + '\\' + self.url_file
         fullPath = fullPath.replace('/', '\\').replace('\\\\', '\\')
+        # Путь до HTML страницы
+        fullPath_saved = self.current_dir + '\\' + self.url_path + '\\saved_page\\' + self.url_file.replace('.txt', '.html')
+        fullPath_saved = fullPath_saved.replace('/', '\\').replace('\\\\', '\\')
+
         try:
             with open(fullPath, 'w', encoding='utf-8') as f:
                 print(placeholder, file=f)
+
                 print(f'Файл сохранен по пути: {fullPath}')
+            if self.save_page == 'true' or self.save_page == 'True':
+                save_dir = self.current_dir + '\\' + self.url_path + '\\saved_page\\'
+                save_dir = save_dir.replace('/', '\\').replace('\\\\', '\\')
+                if not os.path.exists(save_dir):
+                    os.makedirs(save_dir)
+                with open(fullPath_saved, 'w', encoding='utf-8') as f:
+                    print(soup.prettify(), file=f)
+                    print(f'HTML сохранена по пути: {fullPath_saved}')
         except:
             print('Ошибка при сохранении файла!')
     

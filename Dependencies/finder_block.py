@@ -84,8 +84,8 @@ class FinderMeaningfulContent:
                 new_score = pure_score
                 # Получаем штраф/награду за присутствие значимых слов в тексте. (Arc90)
                 for positiveEl in self.main_settings['meaningful_words']:
-                    if positiveEl['tag'] in tag_el.attrs:
-                        elemAttrs = tag_el.attrs[positiveEl['tag']]
+                    if positiveEl['attr'] in tag_el.attrs:
+                        elemAttrs = tag_el.attrs[positiveEl['attr']]
                         # Если у атрибута только одно значение
                         if type(elemAttrs) == str:
                             if self.match_words(positiveEl['words']).match(elemAttrs):
@@ -97,12 +97,20 @@ class FinderMeaningfulContent:
                                     new_score += positiveEl['term']
                                     break
                 # Награда за длину текста > 10 в параграфе
-                for paragraph in tag_el.find_all('p'):
-                    if len(paragraph.text) >= self.main_settings['paragraph']['min_len']:
-                        new_score += self.main_settings['paragraph']['award']
+                for award_tag in self.main_settings['good_tags']:
+                    for current_tag in award_tag['tags']:
+                      for tag_html in tag_el.find_all(current_tag):
+                        if len(tag_html.text) >= award_tag['min_len']:
+                            new_score += award_tag['award']  
+                # for paragraph in tag_el.find_all('p'):
+                #     if len(paragraph.text) >= self.main_settings['paragraph']['min_len']:
+                #         new_score += self.main_settings['paragraph']['award']
+
+                # Запоминаем тег с наилучшей оценкой
                 if new_score > MAX_VAL and tag_count > 10:
                     MAX_VAL = new_score
                     MAX_EL = tag_el
+                    # Debug
                     # print(f'Tag name: {tag_el.name}')
                     # print(f'Char count: {char_count}')
                     # print(f'Tag count: {tag_count}')
