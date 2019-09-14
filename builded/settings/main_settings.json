@@ -1,11 +1,4 @@
 {
-    "delete_cid": [
-        "comment",
-        "foot",
-        "footer",
-        "navbar",
-        "header"
-    ],
     "trash_tags": [
         "script",
         "noscript",
@@ -18,13 +11,48 @@
         "iframe",
         "svg"
     ],
-    "paragraph": {
-        "min_len": 10,
-        "award": 10
-    },
+    "good_tags": [
+        {
+            "tags": [
+                "p"
+            ],
+            "min_len": 10,
+            "award": 10
+        },
+        {
+            "tags": [
+                "h1",
+                "h2"
+            ],
+            "min_len": 10,
+            "award": 250
+        }
+    ],
+    "minimal_remove": [
+        {
+            "tag": "td",
+            "max_len": 10,
+            "max_childrens": 2
+        },
+        {
+            "tag": "tr",
+            "max_len": 10,
+            "max_childrens": 2
+        },
+        {
+            "tag": "div",
+            "max_len": 10,
+            "max_childrens": 2
+        },
+        {
+            "tag": "table",
+            "max_len": 10,
+            "max_childrens": 2
+        }
+    ],
     "meaningful_words": [
         {
-            "tag": "class",
+            "attr": "class",
             "words": [
                 "post",
                 "entry",
@@ -37,7 +65,7 @@
             "term": 25
         },
         {
-            "tag": "id",
+            "attr": "id",
             "words": [
                 "post",
                 "entry",
@@ -49,7 +77,7 @@
             "term": 25
         },
         {
-            "tag": "class",
+            "attr": "class",
             "words": [
                 "comment",
                 "foot",
@@ -61,7 +89,7 @@
             "term": -25
         },
         {
-            "tag": "id",
+            "attr": "id",
             "words": [
                 "comment",
                 "foot",
