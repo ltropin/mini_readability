@@ -66,13 +66,11 @@ if len(sys.argv) >= 2:
         with open(f"{currentPath}/{file_txt}", 'r') as f:
             urls = f.readlines()
         for url_txt in urls:
-            sess = requests.session()
             saver = SaveContent(url=url_txt.replace('\n', ''),
                                 main_settings=main_json_settings,
                                 format_setings=format_json_settings,
                                 file_user_agents=user_agents,
                                 file_proxies=proxies,
-                                requester=sess,
                                 logging=logging,
                                 save_page=save_page)
             saver.save_content()

@@ -22,13 +22,17 @@ class SaveContent:
         Основные настройки.
     format_settings : dict
         Настройки форматирования тегов.
-    user_agents : list (optional)
+    file_user_agents : list (optional)
         Список user-agen'ов
-    proxies: dict (optional)
+    file_proxies: dict (optional)
         Словарь проксей
+    logging : str (flag) (optional)
+        Включить выввод информации в консоль
+    save_page : str (flag) (optional)
+        Сохранение полученной HTML страницы
     """
     def __init__(self, url, main_settings, format_setings, file_user_agents=None,
-                            file_proxies=None, requester=None, logging=None, save_page=None):
+                            file_proxies=None, logging=None, save_page=None):
         self.url = url
         self.requester = requester
         self.logging = logging
@@ -77,12 +81,8 @@ class SaveContent:
             print(f'Proxy: {list(proxy.values())[0]}')
             print(f'User-Agent: {current_user_agent}')
         
-        if self.requester is None:
-            htmlResult = requests.get(self.url, headers={'User-Agent': str(current_user_agent)},
-                                                proxies=proxy).content
-        else:
-            htmlResult = self.requester.get(self.url, headers={'User-Agent': str(current_user_agent)},
-                                                      proxies=proxy).content
+        htmlResult = requests.get(self.url, headers={'User-Agent': str(current_user_agent)},
+                                            proxies=proxy).content
         soup = BeautifulSoup(htmlResult, 'lxml')
     
 

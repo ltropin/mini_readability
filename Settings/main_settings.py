@@ -14,6 +14,7 @@ MAIN_SETTINGS = {
             'award': 250
         }
     ],
+    # Удаление `не значимых` тегов
     'minimal_remove': [
         {
             'tag': 'td',

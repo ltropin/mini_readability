@@ -42,8 +42,9 @@ class Replacer:
         ------------------
         1. Выделение тега через селектор `body`
         2. remove_trash_tags
-        3. remove_empty_strings
-        4. formate_html
+        3. remove_min_size
+        4. remove_empty_strings
+        5. formate_html
         """
         self.html_soup = self.html_soup.select_one('body')
         self.html_soup = self.remove_trash_tags()
