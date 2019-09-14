@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
+ <head>
+  <title>
+   Компания En+ Group провела экологическую акцию «360»: Деловой климат: Экономика: Lenta.ru
+  </title>
+  <meta content="Компания En+ Group провела экологическую акцию «360»: Деловой климат: Экономика: Lenta.ru" name="title"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"66a8d51230","applicationID":"1241738","transactionName":"J19cQUoOWA0ERBoQXhRZUUYXElwOFg==","queueTime":0,"applicationTime":114,"agent":""}
+  </script>
+  <script type="text/javascript">
+   (window.NREUM||(NREUM={})).loader_config={xpid:"VQUGU1VRGwICUFBVBAk="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(u){try{i("ierr",[u,c.now(),!0])}catch(d){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),u=t("gos"),f=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(5),t(4),"addEventListener"in window&&t(3),c.xhrWrappable&&t(6),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(u(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(f);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[f,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),u=XMLHttpRequest,f="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(u.prototype)):u.prototype.hasOwnProperty(f)&&(o(window),o(u.prototype)),a.on(f+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],4:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],5:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",u="clearTimeout",f="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[u,"clearImmediate"],u+d),i.on(c+f,r),i.on(s+f,o)},{}],6:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=f.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,f.emit("xhr-resolved",[],t)),d.inPlace(t,x,"fn-",s)}function i(t){g.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(3);var u=t("ee"),f=u.get("xhr"),d=t(18)(f),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",x=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=f;var y=window.XMLHttpRequest=function(t){var n=new p(t);try{f.emit("new-xhr",[n],n),n.addEventListener(w,o,!1)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}return n};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),f.on("send-xhr-start",function(t,n){r(t,n),i(n)}),f.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else u.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],7:[function(t,n,e){function r(){var t=window.NREUM,n=t.info.accountID||null,e=t.info.agentID||null,r=t.info.trustKey||null,i="btoa"in window&&"function"==typeof window.btoa;if(!n||!e||!i)return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:e,id:o.generateCatId(),tr:o.generateCatId(),ti:Date.now()}};return r&&n!==r&&(a.d.tk=r),btoa(JSON.stringify(a))}var o=t(13);n.exports={generateTraceHeader:r}},{}],8:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(l[r],this.listener,!1);n.aborted||(e.duration=s.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):a(this,t),e.cbTime=this.cbTime,d.emit("xhr-done",[t],t),c("xhr",[n,e,this.startTime]))}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return v(r)}function i(t,n){var e=u(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}function a(t,n){t.params.status=n.status;var e=o(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),u=t(9),f=t(7).generateTraceHeader,d=t("ee"),l=["load","error","abort","timeout"],p=l.length,h=t("id"),m=t(12),v=t(11),w=window.XMLHttpRequest;s.features.xhr=!0,t(6),d.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){a(n,t)},!1),m&&(m>34||m<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),d.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),d.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(e=!!NREUM.init.distributed_tracing.enabled),e&&this.sameOrigin){var r=f();r&&n.setRequestHeader("newrelic",r)}}),d.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=v(r);i&&(e.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{d.emit("internal-error",[e])}catch(r){}}};for(var a=0;a<p;a++)n.addEventListener(l[a],this.listener,!1)}),d.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),d.on("xhr-load-added",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),d.on("xhr-load-removed",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),d.on("addEventListener-end",function(t,n){n instanceof w&&"load"===t[0]&&d.emit("xhr-load-added",[t[1],t[2]],n)}),d.on("removeEventListener-end",function(t,n){n instanceof w&&"load"===t[0]&&d.emit("xhr-load-removed",[t[1],t[2]],n)}),d.on("fn-start",function(t,n,e){n instanceof w&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),d.on("fn-end",function(t,n){this.xhrCbStart&&d.emit("xhr-cb-time",[s.now()-this.xhrCbStart,this.onload,n],n)})}},{}],9:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],10:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[u.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),u=t("loader"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){f[n]=o(l+n,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,f.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[u.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[u.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[u.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,u.now(),!1,n])}},{}],11:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],12:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],13:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],14:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(u){l([u,"",[r,a,o],s])}f(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw f(n+"err",[r,a,d],s),d}finally{f(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function u(t,n,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,u?s+o:o,i,s))}function f(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=u,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,u=0;u<c;u++)s[u].apply(a,r);var d=f[g[e]];return d&&d.push([y,e,r,a]),a}}function p(t,n){x[t]=m(t).concat(n)}function h(t,n){var e=x[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return x[t]||[]}function v(t){return d[t]=d[t]||o(e)}function w(t,n){u(t,function(t,e){n=n||"feature",g[e]=n,n in f||(f[n]=[])})}var x={},g={},y={on:p,addEventListener:p,removeEventListener:h,emit:e,get:v,listeners:m,context:n,buffer:w,abort:a,aborted:!1};return y}function i(){return new r}function a(){(f.api||f.feature)&&(l.aborted=!0,f=l.backlog={})}var s="nr@context",c=t("gos"),u=t(15),f={},d={},l=n.exports=o();l.backlog=f},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return f.abort();u(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),u=t(15),f=t("ee"),d=t(14),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var x=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},y=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:x,features:{},xhrWrappable:y,userAgent:d};t(10),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,R=t(17)},{}]},{},["loader",2,8]);
+  </script>
+  <link href="https://lenta.ru/articles/2019/09/12/baikal/" rel="canonical"/>
+  <link href="/manifest.json" rel="manifest"/>
+  <link href="https://m.lenta.ru/articles/2019/09/12/baikal/" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="//ssp.rambler.ru" rel="dns-prefetch"/>
+  <link as="script" href="//ssp.rambler.ru/capirs_async.js" rel="preload"/>
+  <link href="https://icdn.lenta.ru/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="https://icdn.lenta.ru/lenta_touch.png" rel="apple-touch-icon" type="image/png"/>
+  <meta content="Экологическая акция компании En+ Group «360» по очистке берегов озера Байкал в этом году впервые проводилась в новом формате. Волонтеры не просто убирали мусор. Была обустроена экотропа в бухту Песчаная, установлены пикниковые зоны. Программа по защите озера и заповедных территорий будет расширяться. " property="description"/>
+  <meta content="summary_large_image" property="twitter:card"/>
+  <meta content="@lentaruofficial" property="twitter:site"/>
+  <meta content="228661749" property="twitter:site:id"/>
+  <meta content="265602470229425" property="fb:app_id"/>
+  <meta content="article" property="og:type"/>
+  <meta content="Байкальский десант" property="og:title"/>
+  <meta content="https://lenta.ru/articles/2019/09/12/baikal/" property="og:url"/>
+  <meta content="https://icdn.lenta.ru/images/2019/09/12/12/20190912120935424/detail_d457edefcba5957b3773d64dd1d56600.jpg" property="og:image"/>
+  <meta content="Компания En+ Group провела экологическую акцию «360»" property="og:description"/>
+  <meta content="Компания En+ Group провела экологическую акцию «360»" name="description"/>
+  <link href="https://m.lenta.ru/articles/2019/09/12/baikal/amp/" rel="amphtml"/>
+  <link href="https://icdn.lenta.ru/assets/webpack/desktop.69be64b6.css" media="all" rel="stylesheet"/>
+  <script>
+   window._settings = {};
+window._settings.modules = {};
+window._settings.modules.fade = {
+  selectors: [
+    '.js-sidebar__toggle > *',
+    '.js-menu > *',
+    '.js-header',
+    '.js-advert-billboard',
+    '.js-custom-push-notifications',
+    '.js-redline',
+    '.js-tags',
+    '.js-layout',
+    '.js-topic'
+  ]
+};
+  </script>
+  <script>
+   //<![CDATA[
+!function(n){var e={};function t(o){if(e[o])return e[o].exports;var s=e[o]={i:o,l:!1,exports:{}};return n[o].call(s.exports,s,s.exports,t),s.l=!0,s.exports}t.m=n,t.c=e,t.d=function(n,e,o){t.o(n,e)||Object.defineProperty(n,e,{configurable:!1,enumerable:!0,get:o})},t.n=function(n){var e=n&&n.__esModule?function(){return n.default}:function(){return n};return t.d(e,"a",e),e},t.o=function(n,e){return Object.prototype.hasOwnProperty.call(n,e)},t.p="/assets/webpack/",t(t.s=117)}({117:function(n,e,t){"use strict";window._settings=window._settings||{},window._settings.events=window._settings.events||{},window._settings.components=window._settings.components||{},window._settings.modules=window._settings.modules||{},window._errors=[],window.onerror=function(n){window._errors.push(n)},t(118)},118:function(n,e,t){"use strict";if("#action-fade"===window.location.hash){var o=window._settings.modules.fade.selectors,s=document.createElement("style");s.innerHTML=o.join(",")+" {opacity: 0;}",document.head.appendChild(s)}}});
+//]]>
+  </script>
+  <script defer="defer" src="https://icdn.lenta.ru/assets/webpack/vendorsDesktop.db37bf8d.js">
+  </script>
+  <script defer="defer" src="https://icdn.lenta.ru/assets/webpack/commonDesktop.36585be9.js">
+  </script>
+  <script defer="defer" src="https://icdn.lenta.ru/assets/webpack/desktop.69be64b6.js">
+  </script>
+  <script async="async" src="//ssp.rambler.ru/capirs_async.js">
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJBSQR');
+  </script>
+ </head>
+ <body class="page-topic">
+  <!-- Google Tag Manager -->
+  <div class="g-application js-root" id="root">
+   <nav class="b-sidebar-menu js-sidebar" id="sidebar">
+    <div class="b-sidebar-menu_origin b-menu-decorator js-menu" id="sidebar-menu">
+     <div class="b-sidebar-menu__wrap">
+      <ul class="b-sidebar-menu__list">
+       <li class="b-sidebar-menu__list-item">
+        Главное [https://lenta.ru]
+       </li>
+       <li class="b-sidebar-menu__list-item">
+        Россия [https://lenta.ru/rubrics/russia/]
+       </li>
+       <li class="b-sidebar-menu__list-item">
+        Мир [https://lenta.ru/rubrics/world/]
+       </li>
+       <li class="b-sidebar-menu__list-item">
+        Бывший СССР [https://lenta.ru/rubrics/ussr/]
+       </li>
+       <li class="b-sidebar-menu__list-item">
+        Экономика [https://lenta.ru/rubrics/economics/]
+       </li>
+       <li class="b-sidebar-menu__list-item">
+        Силовые структуры [https://lenta.ru/rubrics/forces/]
+       </li>
+       <li class="b-sidebar-menu__list-item">
+        Наука и техника [https://lenta.ru/rubrics/science/]
+       </li>
+       <li class="b-sidebar-menu__list-item">
+        Культура [https://lenta.ru/rubrics/culture/]
+       </li>
+       <li class="b-sidebar-menu__list-item">
+        Спорт [https://lenta.ru/rubrics/sport/]
+       </li>
+       <li class="b-sidebar-menu__list-item">
+        Интернет и СМИ [https://lenta.ru/rubrics/media/]
+       </li>
+       <li class="b-sidebar-menu__list-item">
+        Ценности  [https://lenta.ru/rubrics/style/]
+       </li>
+       <li class="b-sidebar-menu__list-item">
+        Путешествия [https://lenta.ru/rubrics/travel/]
+       </li>
+       <li class="b-sidebar-menu__list-item">
+        Из жизни [https://lenta.ru/rubrics/life/]
+       </li>
+       <li class="b-sidebar-menu__list-item">
+        Дом [https://lenta.ru/rubrics/realty/]
+       </li>
+       <li>
+        Статьи [https://lenta.ru/parts/text/]
+       </li>
+       <li>
+        Галереи [https://lenta.ru/parts/photo/]
+       </li>
+       <li>
+        Видео [https://lenta.ru/parts/video/]
+       </li>
+       <li>
+        Спецпроекты [https://lenta.ru/specprojects/]
+       </li>
+       <li>
+        Мотор [http://motor.ru/?utm_source=menu_lenta]
+       </li>
+       <li>
+        <div class="b-goodnews js-goodnews">
+         <div class="b-goodnews__popup">
+          <div class="b-goodnews__popup-appeal">
+           Хочешь видеть только хорошие новости? Жми!
+          </div>
+          <div class="b-goodnews__popup-success">
+           Лента добра активирована. Это зона смеха, позитива и единорожек.
+          </div>
+          <div class="b-goodnews__popup-reject">
+           Лента добра деактивирована. Добро пожаловать в реальный мир.
+          </div>
+         </div>
+         <div class="b-goodnews__body">
+          <label class="b-goodnews__slider" for="goodnews-ckeckbox">
+           Лента добра
+          </label>
+         </div>
+        </div>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+   <section class="b-header js-header">
+    <div class="b-header__wrap">
+     <div class="b-header__info">
+      Экономика [https://lenta.ru/rubrics/economics/]
+     </div>
+    </div>
+    <!-- ошибка при обработке инклуда -->
+   </section>
+   <nav class="b-tags-list js-tags">
+    <div class="g-layout">
+     <div class="row">
+      <div class="span11">
+       <div class="items">
+        Все [https://lenta.ru/rubrics/economics/]
+        Госэкономика [https://lenta.ru/rubrics/economics/economy/]
+        Бизнес [https://lenta.ru/rubrics/economics/companies/]
+        Рынки [https://lenta.ru/rubrics/economics/markets/]
+        Деньги [https://lenta.ru/rubrics/economics/finance/]
+        Деловой климат [https://lenta.ru/rubrics/economics/business_climate/]
+        Социальная сфера [https://lenta.ru/rubrics/economics/social/]
+       </div>
+      </div>
+      <div class="span1 archive">
+       Архив [https://lenta.ru/2019/09/14/]
+      </div>
+     </div>
+    </div>
+   </nav>
+   <div class="b-topic-layout js-topic">
+    <div class="g-layout">
+     <div class="b-topic-layout__content clearfix">
+      <div class="b-topic-layout__right js-topic__sidebars">
+       <div class="b-topic-sidebar">
+        <div class="b-topic-sidebar__child js-topic__sidebar-top">
+         <section class="b-yellow-box js-yellow-box">
+          <div class="b-yellow-box__wrap">
+           <div class="b-yellow-box__header bordered-title">
+            Последние новости
+           </div>
+           <div class="item">
+            16:20Трамп заявил о ликвидации сына Усамы бен Ладена [https://lenta.ru/news/2019/09/14/ben/]
+           </div>
+           <div class="item">
+            17:06Зеленский отказался признавать поражение в споре с мэром [https://lenta.ru/news/2019/09/14/spor/]
+           </div>
+           <div class="item" data-partslug="video">
+            16:44Богомолов согласился стать «первой леди» в случае президентства Собчак [https://lenta.ru/news/2019/09/14/vows/]
+           </div>
+           <div class="item">
+            16:27В московском аэропорту пожаловались на «мяуканье из стен»  [https://moslenta.ru/news/v-moskovskom-aeroportu-pozhalovalis-na-myaukane-iz-sten-14-09-2019.htm/?utm_source=from_lenta]
+           </div>
+           <div class="item">
+            16:26«Ливерпуль» одержал волевую победу и упрочил лидерство в АПЛ [https://lenta.ru/news/2019/09/14/liveragainwon/]
+           </div>
+           <div class="item">
+            16:23Российский футбол пристыдили за отсутствие женщин-арбитров [https://lenta.ru/news/2019/09/14/ugol_golovy/]
+           </div>
+           <div class="item">
+            16:12Из особняка Черчилля украли золотой унитаз [https://lenta.ru/news/2019/09/14/ynitaz/]
+           </div>
+           <div class="item">
+            15:45Гиперзвуковому «Циркону» предрекли цезиевый стелс-щит [https://lenta.ru/news/2019/09/14/a12/]
+           </div>
+           <div class="item">
+            15:37Русский экзархат в Европе приняли в РПЦ [https://lenta.ru/news/2019/09/14/typrinyat/]
+           </div>
+           <div class="item">
+            13:18Нурмагомедов сдержал слово перед Порье [https://lenta.ru/news/2019/09/14/nurma_respect/]
+           </div>
+          </div>
+         </section>
+        </div>
+        <div class="b-topic-sidebar__child js-topic__sticky-sidebar js-top-column-container">
+         <div class="js-top-column">
+          <div class="bright-pictures-section">
+           <section class="b-yellow-box js-yellow-box b-yellow-box_popular">
+            <div class="b-yellow-box__wrap">
+             <div class="b-yellow-box__header bordered-title">
+              Популярные новости
+             </div>
+             <div class="item">
+              08:44Россиян поучили узнавать происхождение своего рода по фамилиям [https://lenta.ru/news/2019/09/14/rod/]
+             </div>
+             <div class="item">
+              14:28Россиянам рассказали о причинах уменьшения пенсии [https://lenta.ru/news/2019/09/14/pfr/]
+             </div>
+             <div class="item">
+              ВчераАнонсировано специальное заявление Заворотнюк [https://lenta.ru/news/2019/09/13/statement/]
+             </div>
+             <div class="item">
+              13:18Нурмагомедов сдержал слово перед Порье [https://lenta.ru/news/2019/09/14/nurma_respect/]
+             </div>
+             <div class="item">
+              11:12Стало известно о парезе Заворотнюк [https://lenta.ru/news/2019/09/14/zav/]
+             </div>
+             <div class="item">
+              15:51Врачи прекратили интенсивное лечение Заворотнюк [https://lenta.ru/news/2019/09/14/prekratili/]
+             </div>
+            </div>
+           </section>
+           <div id="rnet_lenta_684">
+            <div class="teaser_header">
+             Новости партнеров
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="b-topic-layout__left js-topic__content">
+       <article class="b-topic b-topic_article" itemscope="" itemtype="http://schema.org/NewsArticle">
+        <div class="b-topic__content">
+         <div class="b-topic__header js-topic__header">
+          <div class="b-topic__info">
+           Дата:  10:00, 13 сентября 2019
+           *** Байкальский десант
+           *** Компания En+ Group провела экологическую акцию «360»
+           <div class="b-topic__socials _header">
+            <div class="b-socials">
+             <div class="b-socials__favorite">
+              <div class="b-favorite js-favorite" data-class-active="b-favorite_active" data-class-loaded="b-favorite_loaded" data-class-logged="b-favorite_logged" data-uri="/articles/2019/09/12/baikal/">
+               Перейти в «Мою Ленту» [https://lenta.ru/my/dashboard]
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="b-topic__title-image" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+            <div class="b-label">
+             <div class="b-label__caption">
+              Михаил Хардиков
+             </div>
+             <div class="b-label__credits">
+              Фото:
+              Артем Моисеев [https://vk.com/project360plus]
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="b-text clearfix js-topic__text" itemprop="articleBody">
+          <p class="b-topic__announce">
+           Экологическая акция компании En+ Group
+           «360» [https://vk.com/project360plus]
+           по очистке берегов озера Байкал в этом году впервые проводилась в новом формате. Волонтеры не просто убирали мусор. Была обустроена экотропа в бухту Песчаная, установлены пикниковые зоны. В дальнейшем, как говорят организаторы проекта, программа по защите озера и заповедных территорий будет расширяться: появятся экологический мониторинг водных объектов, грантовый конкурс экологических проектов, также будут проводиться и другие мероприятия для жителей Иркутской области и ее столицы.
+          </p>
+          <p>
+           Экологический десант высадился в минувшие выходные на берег Байкала. Около 500 волонтеров убирали мусор и благоустраивали места отдыха для туристов. Все это проходило в рамках традиционной акции «360», которую с 2011 года реализует компания En+ Group. Добровольцы приехали на Байкал не только из Иркутской области, но и из Новосибирска, Томска, Якутска, Твери, Тульской области, Астрахани, с Сахалина и даже с Украины. Среди участников были и корпоративные волонтеры, представлявшие 21 федеральную и региональную компании, 7 организованных групп студентов и школьников. «Меня позвали друзья. Мы собрались и поехали. Я впервые принимаю участие в подобном мероприятии, — говорит волонтер экологической акции «360», жительница Иркутска Анастасия. — Здесь очень красиво, но грязно. Жаль, что люди не ценят такие места».
+          </p>
+          <p>
+           В уборке поблизости с поселком Бугульдейка принимали участие и топ-менеджеры En+ — финансовый директор компании Михаил Хардиков и директор «ЕвроСибЭнерго-Гидрогенерация» (управляет ГЭС En+) Сергей Кузнецов. «Мы движемся в сторону ответственного туризма, — говорит Михаил Хардиков. Цель — сделать так, чтобы люди не просто убирали мусор на Байкале, как это делают наши волонтеры, но и не мусорили изначально, имели понимание того, как нужно вести себя». «Мы буквально сдвинули горы, — отметил Сергей Кузнецов. — За годы проведения акции по уборке берегов Байкала сделано многое. Главное достижение — то, что мы смогли превратить это в тренд, который подхватили не только наши волонтеры, но также муниципальные образования и многие предприятия нашего региона».
+          </p>
+          <p>
+           Экологическая акция «360» — это часть комплексной программы компании по защите озера Байкал и заповедных территорий РФ от неблагоприятных экологических воздействий. В программу входят экологические, социальные, научные, образовательные и просветительские проекты. Во время первой волонтерской акции в 2011 году 100 сотрудников «Иркутскэнерго» (входит в En+ Group) собрали на байкальском мысе Улирба около 500 мешков с мусором, который был вывезен на полигон бытовых отходов. Всего же за 9 лет в ежегодных акциях приняли участие 144 500 человек, собравшие более 4500 тонн мусора. Кроме того, были облагорожены десятки заповедных зон, убраны несанкционированные свалки, сооружены экологические тропы, обустроены станции кольцевания птиц.
+          </p>
+          <p>
+           В этом году участники акции не только собрали 6 «КамАЗов» отходов, но и обустроили более полукилометра экотропы в районе поселка Большое Голоустное, установили три пикниковые зоны в пади Щегловка и бухте Широкая. Причем в этом году мусор сортировали: пластик — отдельно, стекло — отдельно, металл — отдельно. Среди самых экзотических находок, обнаруженных волонтерами, — старинные карманные часы, несколько стиральных машин, части телевизоров, бамперы от автомобилей, две коляски от мотоцикла «Урал», утюг, обувь, пальто, мотоциклетные шлемы, скелет лошади, пылесос, бумеранг и пропеллер. Всего волонтеры собрали 1869 килограммов стекла, 930 килограммов металла, 146 килограммов пластика, 12,5 килограмма пластиковых крышечек от бутылок.
+          </p>
+          <p>
+           На этом организаторы акции останавливаться не собираются. «Пришло время двигаться вперед, поэтому мы трансформируем акцию и всю программу, — рассказывает Михаил Хардиков. — Она получит название «365 со знаком плюс». Мы считаем, что о природе необходимо заботиться круглогодично. В рамках обновленной программы мы планируем проводить экологические исследования Байкала и Ангары, объявим грант на экологические проекты среди неравнодушных жителей Иркутской области. Так мы сможем лучше понять, в какую сторону нужно развиваться в плане поддержания природной территории». Организаторы отмечают, что движение за сохранение Байкала не только привлекает новых сторонников, но и помогает развить корпоративное волонтерство в России.
+          </p>
+         </div>
+        </div>
+        <section class="b-topic__socials _footer">
+         <div class="b-socials">
+          <div class="b-socials__favorite">
+           <div class="b-favorite js-favorite" data-class-active="b-favorite_active" data-class-loaded="b-favorite_loaded" data-class-logged="b-favorite_logged" data-uri="/articles/2019/09/12/baikal/">
+            Перейти в «Мою Ленту» [https://lenta.ru/my/dashboard]
+           </div>
+          </div>
+          Обсудить [https://lenta.ru/comments/articles/2019/09/12/baikal/]
+         </div>
+        </section>
+        <section class="b-topic-addition b-links js-topic__links">
+         <div class="bordered-title">
+          Ссылки по теме
+         </div>
+         <div class="item">
+          <div class="title">
+           Полный бак [https://lenta.ru/articles/2019/08/25/garbage/]
+          </div>
+          Дата: lenta.ru, 25 августа 2019
+         </div>
+         <div class="item">
+          <div class="title">
+           Путин заявил о недопустимости добычи угля в ущерб экологии [https://lenta.ru/news/2019/08/22/coal/]
+          </div>
+          Дата: lenta.ru, 22 августа 2019
+         </div>
+         <div class="item">
+          <div class="title">
+           Обнаружена новая угроза Байкалу [https://lenta.ru/news/2019/07/30/baikal/]
+          </div>
+          Дата: lenta.ru, 30 июля 2019
+         </div>
+         <div class="item">
+          <div class="title">
+           Лес вокруг Байкала собрались вырубить ради железной дороги [https://lenta.ru/news/2019/07/24/baikal/]
+          </div>
+          Дата: lenta.ru, 24 июля 2019
+         </div>
+        </section>
+       </article>
+      </div>
+     </div>
+     <div class="b-topic-longgrid b-topic-addition js-topic__longgrid">
+      <div class="bordered-title">
+       Другие материалы рубрики [https://lenta.ru/rubrics/economics/]
+      </div>
+      <div class="row">
+       <div class="span4">
+        <section class="b-longgrid-column">
+         <div class="item article" data-partslug="text">
+          <div class="info g-date item__info">
+           Экономика [https://lenta.ru/rubrics/economics/]
+           <span class="g-date item__date">
+            <span class="time">
+             00:06
+            </span>
+            Сегодня
+           </span>
+          </div>
+          <div class="titles">
+           <h3>
+            Русский стандарт [https://lenta.ru/articles/2019/09/14/investition/]
+           </h3>
+           <div class="rightcol">
+            В российскую экономику никто не верил. Теперь в нее вложат миллиарды
+           </div>
+          </div>
+         </div>
+         <div class="item news b-tabloid__topic_news">
+          <div class="info g-date item__info">
+           <span class="g-date item__date">
+            <span class="time">
+             07:32
+            </span>
+            <span class="item__mdash">
+             —
+            </span>
+            Сегодня
+           </span>
+          </div>
+          <div class="titles">
+           <h3>
+            «Северный поток» ограничили [https://lenta.ru/news/2019/09/14/gazprom/]
+           </h3>
+          </div>
+         </div>
+         <div class="item news b-tabloid__topic_news">
+          <div class="info g-date item__info">
+           <span class="g-date item__date">
+            <span class="time">
+             07:01
+            </span>
+            <span class="item__mdash">
+             —
+            </span>
+            Сегодня
+           </span>
+          </div>
+          <div class="titles">
+           <h3>
+            Трамп прикрылся национальными интересами и снова запретил торговать с Кубой [https://lenta.ru/news/2019/09/14/embargo/]
+           </h3>
+          </div>
+         </div>
+         <div class="item news b-tabloid__topic_news">
+          <div class="info g-date item__info">
+           <span class="g-date item__date">
+            <span class="time">
+             14:20
+            </span>
+            <span class="item__mdash">
+             —
+            </span>
+            13 сентября
+           </span>
+          </div>
+          <div class="titles">
+           <h3>
+            Медведев раскрыл условия сокращения рабочей недели [https://lenta.ru/news/2019/09/13/nedelya/]
+           </h3>
+          </div>
+         </div>
+        </section>
+       </div>
+       <div class="span4">
+        <section class="b-longgrid-column">
+         <div class="item article" data-partslug="text">
+          <div class="info g-date item__info">
+           Экономика [https://lenta.ru/rubrics/economics/]
+           <span class="g-date item__date">
+            <span class="time">
+             00:02
+            </span>
+            9 сентября
+           </span>
+          </div>
+          <div class="titles">
+           <h3>
+            Не доставляет [https://lenta.ru/articles/2019/09/09/post/]
+           </h3>
+           <div class="rightcol">
+            «Почта России» замахнулась на мировое лидерство, но не может дать россиянам самое важное
+           </div>
+          </div>
+         </div>
+         <div class="item news b-tabloid__topic_news">
+          <div class="info g-date item__info">
+           <span class="g-date item__date">
+            <span class="time">
+             20:50
+            </span>
+            <span class="item__mdash">
+             —
+            </span>
+            13 сентября
+           </span>
+          </div>
+          <div class="titles">
+           <h3>
+            В России попросили поднять цену на водку [https://lenta.ru/news/2019/09/13/vodka/]
+           </h3>
+          </div>
+         </div>
+         <div class="item news b-tabloid__topic_news">
+          <div class="info g-date item__info">
+           <span class="g-date item__date">
+            <span class="time">
+             20:33
+            </span>
+            <span class="item__mdash">
+             —
+            </span>
+            13 сентября
+           </span>
+          </div>
+          <div class="titles">
+           <h3>
+            Утвержден список платных участков дорог вокруг Москвы [https://lenta.ru/news/2019/09/13/plata/]
+           </h3>
+          </div>
+         </div>
+         <div class="item news b-tabloid__topic_news" data-partslug="text">
+          <div class="info g-date item__info">
+           <span class="g-date item__date">
+            <span class="time">
+             20:16
+            </span>
+            <span class="item__mdash">
+             —
+            </span>
+            13 сентября
+           </span>
+          </div>
+          <div class="titles">
+           <h3>
+            «Газпром» поймали на продаже газа самому себе [https://lenta.ru/news/2019/09/13/statistika/]
+           </h3>
+          </div>
+         </div>
+        </section>
+       </div>
+       <div class="span4">
+        <section class="b-longgrid-column">
+         <div class="item article" data-partslug="text">
+          <div class="info g-date item__info">
+           Экономика [https://lenta.ru/rubrics/economics/]
+           <span class="g-date item__date">
+            <span class="time">
+             08:03
+            </span>
+            13 сентября
+           </span>
+          </div>
+          <div class="titles">
+           <h3>
+            Рублевские грядки [https://lenta.ru/articles/2019/09/13/rub_potatos/]
+           </h3>
+           <div class="rightcol">
+            О юристе, ставшем картофелеводом
+           </div>
+          </div>
+         </div>
+         <div class="item news b-tabloid__topic_news">
+          <div class="info g-date item__info">
+           <span class="g-date item__date">
+            <span class="time">
+             20:06
+            </span>
+            <span class="item__mdash">
+             —
+            </span>
+            13 сентября
+           </span>
+          </div>
+          <div class="titles">
+           <h3>
+            В руководстве Европы нашли финансового вампира [https://lenta.ru/news/2019/09/13/vampire/]
+           </h3>
+          </div>
+         </div>
+         <div class="item news b-tabloid__topic_news">
+          <div class="info g-date item__info">
+           <span class="g-date item__date">
+            <span class="time">
+             18:58
+            </span>
+            <span class="item__mdash">
+             —
+            </span>
+            13 сентября
+           </span>
+          </div>
+          <div class="titles">
+           <h3>
+            Эксперимент KFC по введению здорового питания провалился [https://lenta.ru/news/2019/09/13/fail/]
+           </h3>
+          </div>
+         </div>
+         <div class="item news b-tabloid__topic_news">
+          <div class="info g-date item__info">
+           <span class="g-date item__date">
+            <span class="time">
+             19:43
+            </span>
+            <span class="item__mdash">
+             —
+            </span>
+            13 сентября
+           </span>
+          </div>
+          <div class="titles">
+           <h3>
+            Мишустин увидел будущее в бесконтактных технологиях [https://lenta.ru/news/2019/09/13/fns/]
+           </h3>
+          </div>
+         </div>
+        </section>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <section class="b-tabloid js-tabloid">
+    <div class="g-layout">
+     <div class="b-tabloid__row row">
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Русский экзархат в Европе приняли в РПЦ [https://lenta.ru/news/2019/09/14/typrinyat/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Глубоко травмированные, тревожные люди»Россияне не могут стать счастливыми. Почему в этом виноват СССР? [https://lenta.ru/articles/2019/09/13/sovetius/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Матвиенко выдвинут в сенаторы [https://lenta.ru/news/2019/09/14/matvienko/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Его органы и системы не готовы»Зачем в России пытаются спасать детей, у которых почти нет шансов выжить и быть здоровыми [https://lenta.ru/articles/2019/09/12/mladenets/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Число пострадавших в аварии с грузовиком под Ярославлем возросло до 28 человек [https://lenta.ru/news/2019/09/14/28/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Двойная жизнь агента СмоленковаКак сотрудник Кремля работал на США и торговал секретами [https://lenta.ru/articles/2019/09/10/spyyy/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Медведев приедет на празднование 75-летия освобождения Белграда [https://lenta.ru/news/2019/09/14/belgrad/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/russia/]
+       </div>
+      </div>
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Трамп заявил о ликвидации сына Усамы бен Ладена [https://lenta.ru/news/2019/09/14/ben/]
+        </div>
+        <div class="b-tabloid__topic extlink" data-partslug="video">
+         «Наследники Гитлера рвутся к власти» [https://lenta.ru/extlink/2019/09/13/budem_razbiratsya/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Из особняка Черчилля украли золотой унитаз [https://lenta.ru/news/2019/09/14/ynitaz/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Мы добьемся правды» Американцы хотят узнать все о терактах 11 сентября. На их стороне пожарные и ученые [https://lenta.ru/articles/2019/09/11/9_11_truth/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Рассекречены планы ЦРУ использовать голубей и дельфинов в качестве шпионов [https://lenta.ru/news/2019/09/14/doves_scouts/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Не думаю, что Бог простит»Священники превратили тропический остров в царство разврата. Их жертвы молчали десятки лет [https://lenta.ru/articles/2019/09/09/guam_abuse/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Загорелся один из крупнейших в мире нефтеперерабатывающих заводов [https://lenta.ru/news/2019/09/14/pozhar/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/world/]
+       </div>
+      </div>
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="bordered-title">
+         Бывший СССР [https://lenta.ru/rubrics/ussr/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Зеленский отказался признавать поражение в споре с мэром [https://lenta.ru/news/2019/09/14/spor/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «В украинские батальоны шел всякий сброд»Посланцы Кадырова и дикие ополченцы: воспоминания военкора о начале войны в Донбассе [https://lenta.ru/articles/2019/09/14/donbass_izvarino/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Зеленский задумал сделать из Украины «кинодержаву» [https://lenta.ru/news/2019/09/14/kinoderzhava/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Украина приостановила разрыв отношений с РоссиейПосле смены власти в Киеве российский МИД надеется на потепление [https://lenta.ru/brief/2019/09/11/stop/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         В ЛНР задержали украинского вандала-террориста [https://lenta.ru/news/2019/09/14/pamyatnik/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Они долго были на передовой, и у них крыша поехала»Воспоминания российского военкора о самых страшных днях войны в Донбассе [https://lenta.ru/articles/2019/09/09/donbass1/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         На Украине захотели соединить Балтийское и Черное моря [https://lenta.ru/news/2019/09/14/more/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/ussr/]
+       </div>
+      </div>
+     </div>
+     <div class="b-tabloid__row row">
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         «Северный поток» ограничили [https://lenta.ru/news/2019/09/14/gazprom/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Русский стандартВ российскую экономику никто не верил. Теперь в нее вложат миллиарды [https://lenta.ru/articles/2019/09/14/investition/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Трамп прикрылся национальными интересами и снова запретил торговать с Кубой [https://lenta.ru/news/2019/09/14/embargo/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Не доставляет«Почта России» замахнулась на мировое лидерство, но не может дать россиянам самое важное [https://lenta.ru/articles/2019/09/09/post/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Медведев раскрыл условия сокращения рабочей недели [https://lenta.ru/news/2019/09/13/nedelya/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Байкальский десантКомпания En+ Group провела экологическую акцию «360» [https://lenta.ru/articles/2019/09/12/baikal/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         В России попросили поднять цену на водку [https://lenta.ru/news/2019/09/13/vodka/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/economics/]
+       </div>
+      </div>
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="bordered-title">
+         Силовые структуры [https://lenta.ru/rubrics/forces/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news" data-partslug="video">
+         Место предполагаемого изнасилования дознавательницы из Уфы попало на видео [https://lenta.ru/news/2019/09/13/doznavatel/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Он перестал быть человеком»Маньяк по кличке Мосгаз стал кошмаром столицы. Его хотели казнить на Красной площади [https://lenta.ru/articles/2019/09/14/maniac/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         ФСБ поймала главного прокурора Башкирии на прослушке чужой жены [https://lenta.ru/news/2019/09/13/wife/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Его приемы лихих 90-х устарели»Лидер преступной России проиграл войну азербайджанскому вору. Мир криминала ждут перемены [https://lenta.ru/articles/2019/09/12/vvz/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Безупречный полицейский начальник устроил крупное ДТП под Москвой [https://lenta.ru/news/2019/09/13/dtp/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Из адаСамые страшные маньяки СССР и России. Спецпроект «Ленты.ру» [https://lenta.ru/themes/2019/08/27/maniac/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Генерал МВД получил уголовное дело из-за махинаций с больничным [https://lenta.ru/news/2019/09/13/popal/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/forces/]
+       </div>
+      </div>
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="bordered-title">
+         Наука и техника [https://lenta.ru/rubrics/science/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Гиперзвуковому «Циркону» предрекли цезиевый стелс-щит [https://lenta.ru/news/2019/09/14/a12/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Среди бессмертныхЭти существа создали всю сложную жизнь на Земле. Ученые впервые узнали, как они выглядят [https://lenta.ru/articles/2019/09/13/asgard/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         США защитили Европу от России «стальным дождем» [https://lenta.ru/news/2019/09/14/mlrs/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Оно вам надоApple представила самый мощный телефон в мире: презентация новых iPhone [https://lenta.ru/articles/2019/09/10/apple/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Появился снимок «нестандартной» С-400 [https://lenta.ru/news/2019/09/14/s300/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Зловещая тишинаИнопланетяне не подают признаков жизни, но их упорно ищут. Чем это грозит человечеству? [https://lenta.ru/articles/2019/09/05/noaliens/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Названа самая «раковая» пища [https://lenta.ru/news/2019/09/14/hfcs/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/science/]
+       </div>
+      </div>
+     </div>
+     <div class="b-tabloid__row row">
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         «Ливерпуль» одержал волевую победу и упрочил лидерство в АПЛ [https://lenta.ru/news/2019/09/14/liveragainwon/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Не береги силы, не сдохнешь!»Российские гимнастки — лучшие в мире. Почему их годами унижают и оскорбляют тренеры [https://lenta.ru/articles/2019/09/14/violence_gymnastics/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Российский футбол пристыдили за отсутствие женщин-арбитров [https://lenta.ru/news/2019/09/14/ugol_golovy/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="video">
+         А перестройка все идетПопытки МЮ и «Челси» победить, чемпионская гонка и другие интриги пятого тура АПЛ [https://lenta.ru/video/2019/09/14/prewiewsnova/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Бывший футболист «Ливерпуля» рассказал о неизлечимой болезни сына [https://lenta.ru/news/2019/09/14/owen/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Ломайте ему ноги»Он стал чемпионом Англии, но потерял место в сборной, запил и скатился на дно [https://lenta.ru/articles/2019/09/12/drinknewater/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Нурмагомедов сдержал слово перед Порье [https://lenta.ru/news/2019/09/14/nurma_respect/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/sport/]
+       </div>
+      </div>
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Врачи прекратили интенсивное лечение Заворотнюк [https://lenta.ru/news/2019/09/14/prekratili/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Нео, мой НеоЭтот фильм навсегда изменил кино. Теперь «Матрица» возвращается [https://lenta.ru/articles/2019/09/14/matrix/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Лещенко подыскал замену The Beatles и Queen для изучения в школе [https://lenta.ru/news/2019/09/14/valerianyich/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Почему ты такой странный?»Вечный аутсайдер, поэт-шизофреник, любимый певец Кобейна: умер Дэниел Джонстон  [https://lenta.ru/articles/2019/09/13/danieljohnston/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news" data-partslug="video">
+         Собчак и Богомолов исполнили свадебный танец под живое выступление Киркорова [https://lenta.ru/news/2019/09/14/kirkorov/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Актер фильма «Чернобыль. Зона отчуждения» попал в аварию [https://lenta.ru/news/2019/09/14/fominov/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Спотыкач, одиночество и самый тучный динозавр в миреЛучшие детские книги сентября [https://lenta.ru/articles/2019/09/13/babybooks/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/culture/]
+       </div>
+      </div>
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="bordered-title">
+         Интернет и СМИ [https://lenta.ru/rubrics/media/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news" data-partslug="video">
+         Малахов с женой улеглись голыми в ванну и записали ответ Собчак [https://lenta.ru/news/2019/09/14/malakhov/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="photo">
+         Не поубиваешь — не поешьЭти снимки у одних вызывают отвращение, у других — голод. И отражают человеческую сущность [https://lenta.ru/photo/2019/09/13/meatlove/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Во время свадьбы Собчак и Богомолова произошел конфуз [https://lenta.ru/news/2019/09/14/price_tag/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Сделал мое детство и деградировал»«Ералаш» стал культовым для нескольких поколений. Но что с ним стало сейчас? [https://lenta.ru/articles/2019/09/11/eralash/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Моя жизнь интереснее любой книги»Репортер бросил работу ради порно и свободной любви. Спустя годы он ни о чем не жалеет [https://lenta.ru/articles/2019/09/09/porn_journalist/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news" data-partslug="video">
+         Полуголая Собчак станцевала на своей свадьбе под «Войди в меня» [https://lenta.ru/news/2019/09/14/polniy_sobchak/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="photo">
+         Все круги адаКаждый день по всему миру идет борьба за жизнь. Эти фотографы осмелились ее показать [https://lenta.ru/photo/2019/09/07/directlook/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/media/]
+       </div>
+      </div>
+     </div>
+     <div class="b-tabloid__row row">
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Украинка сняла самую молодую миллиардершу в мире для обложки Playboy [https://lenta.ru/news/2019/09/13/kylieplay/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="photo">
+         Сетки, стразы и чулкиМужчины выпячивают женственность, а женщины — грудь: как прошла Неделя моды в Нью-Йорке [https://lenta.ru/photo/2019/09/11/nyfw/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Самая молодая миллиардерша примерила белье сестры и разозлила фанатов [https://lenta.ru/news/2019/09/13/slim/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Под покровомПочему хиджаб стал популярным по всему миру и кто на этом зарабатывает [https://lenta.ru/articles/2019/09/10/islamic_fashion/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Гостью свадьбы обругали за попытку перещеголять невесту откровенным нарядом [https://lenta.ru/news/2019/09/13/wedshaming/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Не мойся. Через восемь дней приеду»Любимая жена-изменщица, бриллианты и обжорство: роскошная жизнь Наполеона [https://lenta.ru/articles/2019/09/08/luxedenapoleon/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Школьника выгнали с уроков за модные кеды [https://lenta.ru/news/2019/09/13/brandy/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/style/]
+       </div>
+      </div>
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="bordered-title">
+         Путешествия [https://lenta.ru/rubrics/travel/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Пассажир закинул голые ноги на столик в самолете и вызвал омерзение у попутчиков [https://lenta.ru/news/2019/09/13/feetontable/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Горное убежищеКогда-то тут строили бункеры. Миллиардер превратил это место в рай для туристов [https://lenta.ru/articles/2019/09/14/andermatt/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Турист споткнулся по дороге в туалет и умер в Таиланде [https://lenta.ru/news/2019/09/13/tourist/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Залипаешь и не можешь оторваться»Как выглядит другая Германия, о которой туристы не подозревают [https://lenta.ru/articles/2019/09/12/gegmanysummercities/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Иностранцы стали чаще приезжать в Россию [https://lenta.ru/news/2019/09/13/foreigntourist/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Купи осьминога — порадуй тещу!»Как россиянину развлечься в самых укромных уголках Италии [https://lenta.ru/articles/2019/09/11/apulia/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Молодой пассажир самолета притворился стариком-инвалидом и попался [https://lenta.ru/news/2019/09/13/newyooork/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/travel/]
+       </div>
+      </div>
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Орел насмерть заклевал ребенка [https://lenta.ru/news/2019/09/14/eagle/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Это безумно пугает»На дне озер иногда скрываются страшные тайны. Их раскрывают случайные люди [https://lenta.ru/articles/2019/09/14/bloodylakes/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Паук со смертельным ядом поймал превосходящую его в размерах мышь [https://lenta.ru/news/2019/09/13/spider/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="photo">
+         Самый страшный зверьБегемот-каннибал и кровавый фестиваль на лучших снимках дикой природы [https://lenta.ru/photo/2019/09/12/wildlife/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Мать двоих детей похудела вдвое и изменилась до неузнаваемости [https://lenta.ru/news/2019/09/13/model/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «У многих в России все идет по накатанной»История россиянки о жизни в Швеции, Таиланде и Германии [https://lenta.ru/articles/2019/09/10/ger_thai/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news" data-partslug="video">
+         Две жены избили мужа за желание обзавестись третьей [https://lenta.ru/news/2019/09/13/more_wives/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/life/]
+       </div>
+      </div>
+     </div>
+     <div class="b-tabloid__row row">
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="b-tabloid__topic article">
+         Lamborghini за 150 миллионовВидео: обзор самого дорогого и быстроого «Ламбо» в истории — гибрида Sian  [https://motor.ru/lab/lamba150mil.htm/?utm_source=from_lenta]
+        </div>
+        <div class="b-tabloid__topic article">
+         Gymkhana GRiD 2019: дрифт без дыма и «война резины»Гонка, в которой приходится выбирать: ехать красиво или быстро [https://motor.ru/reports/gymkhana-grid-2019-poland.htm/?utm_source=from_lenta]
+        </div>
+        <div class="b-tabloid__topic article">
+         Месяц живем с Volvo XC40: часть первая Знакомимся с «лучшим европейским автомобилем» и проверяем, насколько он на самом деле крут [https://motor.ru/testdrives/xc40long.htm/?utm_source=from_lenta]
+        </div>
+        <div class="b-tabloid__topic article">
+         Франкфурт-2019: автомобили будущегоСамые интересные концептуальные автомобили Франкфуртского моторшоу  [https://motor.ru/reports/frankfurt19conc.htm/?utm_source=from_lenta]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Land Rover вернул на дорогу выставочный внедорожник 1948 года [https://motor.ru/news/lr1948-13-09-2019.htm/?utm_source=from_lenta]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Новый Toyota RAV4 провалил лосиный тест [https://motor.ru/news/rav4moosetest-13-09-2019.htm?utm_source=from_lenta]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Раскрыты подробности о новом седане Cadillac CT4 [https://motor.ru/news/cadillac-ct4-13-09-2019.htm?utm_source=from_lenta]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/motor/]
+       </div>
+      </div>
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Риелтор взялся продать квартиру и «случайно» оформил ее на себя [https://lenta.ru/news/2019/09/13/smart_realtor/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="photo">
+         НашпионилВ какой роскоши живет в США сбежавший из России информатор Олег Смоленков [https://lenta.ru/photo/2019/09/10/spy_house/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Россияне нашли способ заработать миллионы рублей на кусках фанеры [https://lenta.ru/news/2019/09/13/fanera/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «Мы смотрим, шепелявит человек или заикается»Сотрудница банка о том, как на самом деле выдают ипотеку в России [https://lenta.ru/articles/2019/09/10/mortgage_inside/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news" data-partslug="text">
+         Московский «офисный планктон» обленился [https://lenta.ru/news/2019/09/13/5min/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="photo">
+         Стильно, модно, безнадежноЭто самая лучшая в мире мебель. И она вызывает много вопросов [https://lenta.ru/photo/2019/09/08/best_home_design/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Тарифы ЖКХ рассчитают по-новому [https://lenta.ru/news/2019/09/13/pay_less/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/realty/]
+       </div>
+      </div>
+      <div class="span4">
+       <div class="b-tabloid__item">
+        <div class="bordered-title">
+         Нацпроекты [https://lenta.ru/rubrics/np/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Своя колеяСахалин избавился от японского наследия. На это ушло почти 100 лет [https://lenta.ru/articles/2019/09/07/sakhalin/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Полный бакВ России объявили войну мусору. Эффект почувствует каждый [https://lenta.ru/articles/2019/08/25/garbage/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         На низком стартеРоссияне жалуются на снижение доходов. Скоро это изменится [https://lenta.ru/articles/2019/08/31/doxod/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         «В первичном звене провал»Путин назвал главные проблемы российской медицины и рассказал, как их исправить [https://lenta.ru/articles/2019/08/20/zdravbude/]
+        </div>
+        <div class="b-tabloid__topic article" data-partslug="text">
+         Минздрав предложил штрафовать за перекуры на работеКурильщикам хотят урезать зарплату, лишить премий, а вместо курилок открыть уголки спорта [https://lenta.ru/brief/2019/08/17/perekur/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Выбраны регионы для создания научных центров по сельскому хозяйству [https://lenta.ru/news/2019/09/13/centers/]
+        </div>
+        <div class="b-tabloid__topic news b-tabloid__topic_news">
+         Оценено качество ремонта дорог в Сочи [https://lenta.ru/news/2019/09/13/sochi/]
+        </div>
+       </div>
+       <div class="b-tabloid__more">
+        Все материалы [https://lenta.ru/rubrics/np/]
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+ </body>
+</html>
